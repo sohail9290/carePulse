@@ -1,8 +1,7 @@
 import AppointmentForm from "@/components/forms/AppointmentForm"
-import PatientForm from "@/components/forms/PatientForm";
 import { getPatient } from "@/lib/actions/patient.actions";
 import Image from "next/image"
-import Link from "next/link"
+
 
 export default async function NewAppointment({ params }: SearchParamProps) {
     const { userId } = await params;
@@ -19,9 +18,9 @@ export default async function NewAppointment({ params }: SearchParamProps) {
                         className="mb-12 h-10 w-fit"
                     />
                     <AppointmentForm
-                        type="create"
+                        patientId={patient?.$id}
                         userId={userId}
-                        patientId={patient.$id}
+                        type="create"
                     />
                     <p className="copyright py-8">
                         © 2025 CarePulse

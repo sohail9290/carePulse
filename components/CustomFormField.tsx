@@ -4,7 +4,6 @@ import { Control } from "react-hook-form";
 import Image from "next/image";
 import {
     FormControl,
-    FormDescription,
     FormField,
     FormItem,
     FormLabel,

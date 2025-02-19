@@ -36,10 +36,10 @@ const Success = async (props: SearchParamProps) => {
                     <p>We will be in touch shortly to confirm.</p>
                 </section>
                 <section className="request-details">
-                    <p>Requested appointment deatils:</p>
+                    <p>Requested appointment details:</p>
                     <div className="flex items-center gap-3">
                         <Image
-                            src={doctor?.image!}
+                            src={doctor?.image || '/assets/default-doctor.png'}
                             alt="doctor"
                             width={100}
                             height={100}
