@@ -3,8 +3,6 @@
 import Image from "next/image"
 import { Doctors } from "@/constants";
 import { ColumnDef } from "@tanstack/react-table"
-import { Button } from "@/components/ui/button"
-import { MoreHorizontal } from "lucide-react"
 import { StatusBadge } from "@/components/StatusBadge"
 import { formatDateTime } from "@/lib/utils";
 import { Appointment } from "@/types/appwrite.types";
